@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Live site](https://github.com/allesonsales/intro-component-sign-up-form)
+- [Live site](https://allesonsales.github.io/bento-grid-main/)
 
 ## My process
 
