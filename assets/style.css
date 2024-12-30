@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", serif;
+}
+
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+    --black: hsl(0, 0%, 7%);
+    --wite: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+body {
+    padding: 2rem;
+}
+
+.bento__grid {
+    display: grid;
+    grid-auto-rows: 75px;
+    gap: 2rem;
+    grid-template-areas: 
+    'box7 box1 box1 box4'
+    'box7 box1 box1 box4'
+    'box7 box1 box1 box4'
+    'box7 box1 box1 box4'
+    'box7 box2 box3 box4'
+    'box8 box2 box3 box4'
+    'box8 box2 box3 box4'
+    'box8 box6 box5 box5'
+    'box8 box6 box5 box5'
+    'box8 box6 box5 box5';
+    min-width: 1740px;
+}
+
+.bento__grid .item {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    align-content: center;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.bento__grid .box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-area: box1;
+    background-color: var(--purple-500);
+    color: var(--wite);
+    text-align: center;
+}
+
+.bento__grid .box1 img {
+    width: 250px;
+}
+
+.bento__grid .box1 span {
+    width: 500px;
+    line-height: 70px;
+    font-weight: 400;
+}
+
+.bento__grid .box1 span b {
+    color: var(--yellow-500);
+}
+
+.bento__grid .box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    grid-area: box2;
+    background-color: rgb(226, 226, 226);
+}
+
+.bento__grid .box2 img {
+    width: 300px;
+}
+
+.bento__grid .box2 span {
+    width: 200px;
+}
+
+.bento__grid .box3 {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow-500);
+}
+
+.bento__grid .box3 img {
+    width: 250px;
+    margin-top: 1.5rem;
+}
+
+.bento__grid .box3 span {
+    width: 200px;
+    font-weight: 600;
+}
+
+.bento__grid .box4 {
+    grid-area: box4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    background-color: var(--purple-100);
+}
+
+.bento__grid .box4 .bento__textmin {
+    width: 200px;
+}
+
+.bento__grid .box4 .bento__img {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    margin-top: 1rem;  
+    width: 100%;  
+}
+
+.bento__grid .box4 .bento__img img {
+    width: 400px;
+    height: 400px;
+}
+
+.bento__grid .box4 span {
+    width: 250px;
+}
+
+
+.bento__grid .box5 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--wite);
+    grid-area: box5;
+    background-color: var(--purple-500);
+}
+
+.bento__grid .box5 img {
+    width: 250px;
+}
+
+.bento__grid .box5 span {
+    width: 300px;
+}
+
+.bento__grid .box6 {
+    grid-area: box6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.bento__grid .box6 img {
+    width: 200px;
+    margin-top: 1rem;
+}
+
+.bento__grid .box6 span {
+    width: 250px;
+}
+
+.bento__grid .box7 {
+    grid-area: box7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-100);
+}
+
+.bento__grid .box7 img {
+    margin: 1rem;
+    width: 200px;
+}
+
+.bento__grid .box7 span {
+    width: 200px;
+    line-height: 40px;
+}
+
+.bento__grid .box7 span b {
+    color: var(--purple-500);
+    font-style: italic;
+}
+
+
+.bento__grid .box8 {
+    grid-area: box8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow-500);
+}
+
+.bento__grid .box8 img {
+    margin: 1rem;
+    width: 200px;
+}
+
+.bento__grid .box8 span {
+    width: 200px;
+}
+
+
+.bento__textmax {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.bento__textmed {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bento__textmin {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.bento__textsmall {
+    font-size: 1.2rem;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: var(--purple-500);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width:800px) and (orientation: portrait) {
+
+    .bento__grid {
+        display: grid;
+        grid-auto-rows: auto;
+        gap: 2rem;
+        grid-template-areas: 
+        'box1'
+        'box2'
+        'box3'
+        'box4'
+        'box5'
+        'box6'
+        'box7'
+        'box8';
+        min-width: 300px;
+    }
+
+    .bento__grid .box1 span {
+        width: 11rem;
+        line-height: 35px;
+    }
+
+    .bento__grid .box3 {
+        grid-area: box3;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        height: 250px;
+        background-color: var(--yellow-500);
+    }
+
+    .bento__grid .box4 {
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .bento__grid .box4 .bento__img {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bento__grid .box4 .bento__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bento__grid .box4 .span {
+        width: 100%;
+    }
+
+    .bento__grid .box5 {
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .bento__grid .box5 span {
+        width: 200px;
+        text-align: center;
+    }
+    
+   
+    .bento__textmax {
+        font-size: 2rem;
+    }
+
+    .bento__textmed {
+        font-size: 1.2rem;
+    }
+
+    .bento__textmin {
+        font-size: 1rem;
+    }
+
+    .bento__textsmall {
+        font-size: .8rem;
+    }
+}
