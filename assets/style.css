@@ -36,7 +36,6 @@ body {
     'box8 box6 box5 box5'
     'box8 box6 box5 box5'
     'box8 box6 box5 box5';
-    min-width: 1740px;
 }
 
 .bento__grid .item {
@@ -267,7 +266,6 @@ body {
         'box6'
         'box7'
         'box8';
-        min-width: 300px;
     }
 
     .bento__grid .box1 span {
